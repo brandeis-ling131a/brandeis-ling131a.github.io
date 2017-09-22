@@ -1,0 +1,372 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LING 131a: Intro to NLP with Python</title>
+  
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <style>
+    body { margin-left: 20px;  margin-right: 20px; font-size: 16px; }
+    h2 { border-bottom: thin solid black; padding-bottom: 8px; }
+    h3 { padding-top: 55px; margin-top: -30px; margin-bottom: +15px;  }
+    td { padding: 5px; }
+  </style>
+</head>
+
+<body>
+
+
+<h2>LING 131a: Introduction to NLP with Python</h2>
+
+<p>Brandeis University, Fall 2017
+
+<h3>Course information</h3>
+
+<p>
+<table cellpadding="3" cellspacing="10" border="1">
+<tr>
+  <td>Time</td>
+  <td>Tu,Fr 12:30-1:50pm </td>
+</tr>
+<tr>
+  <td>Location</td>
+  <td>Rosenstiel 118</td>
+</tr>
+<tr>
+  <td>Instructor</td>
+  <td>Marc Verhagen</td>
+</tr>
+<tr>
+  <td>TA</td>
+  <td>Keigh Rim</td>
+</tr>
+<tr>
+  <td>Grading TA</td>
+  <td>Jiarui Yao</td>
+</tr>
+<tr>
+  <td>Textbook</td>
+  <td>
+    <a href="http://www.nltk.org/book"><i>Natural Language Processing with Python</i></a>,
+    by Steven Bird, Evan Klein and Edward Loper. 2009. O'Reilly Media, Inc.</td>
+</tr>
+</table>
+</p>
+
+<p>This is an introductory graduate-level course on the computer
+processing of natural language text with the Python programming
+language. Python has quickly become the most popular programming
+language in Natural Language Processing (NLP) since it first came into
+existence because it has built-in data structures that allow natural
+language text to be manipulated with ease and elegance. Python has a
+relatively short learning curve compared with other high-level
+programming languages such as Java and beginners in Python can build
+up their programming skills fairly quickly. In addition, a large
+number of Python modules (such as the NLTK) already exist for language
+processing purposes so that linguistically oriented Python programmers
+can start to write practically useful programs within a relatively
+short period of time.  Students are discouraged, however, from
+becoming overly reliant on third-party modules so that they could
+write code optimized to their own specific needs.  The key to being
+successful in the course is to get your hands dirty and write a lot of
+code. By taking this course you have shown a commitment to become
+proficient in programming. If you have never written any code before
+you may need to adapt to a new learning style that is
+practice-oriented rather than reading-oriented.</p>
+
+<p><u>Learning objectives</u>:</p>
+
+<ul>
+
+<li>Provide an introduction of the fundamental data structures and
+programming constructs in Python;</li>
+
+<li>Provide an introduction of the basic programming techniques and linguistic
+resources that contribute to solving natural language problems;</li>
+
+<li>Help students acquire solid Python programming skills by manipulating
+natural language data;</li>
+
+<li>Provide an introduction of the fundamental techniques used in lexical,
+morphological, syntactic, and semantic analysis.</li>
+
+</ul>
+
+<p><u>Prerequisites</u>. You can take this class if one of the following holds:</p>
+
+<ul>
+<li>You are a CL Masters student.</li>
+<li>You are an undergraduate student and you have taken LING100a and CS11a (or equivalents).</li>
+<li>You are a graduate student and you have taken CS11a (or equivalent).</li>
+</ul>
+
+<p>Basically, to do well in this course it helps if you have some
+programming background and know some linguistics. When in doubt,
+contact the instructor.</p>
+
+
+<a name="hours"></a>
+<h3>Office hours and contact information</h3>
+
+<table border="1">
+  <tr>
+    <td>Marc Verhagen</td>
+    <td>Tue, Fri 2-3</td>
+    <td>Volen 216</td>
+    <td>marc (at) cs (dot) brandeis (dot) edu</td>
+  </tr>
+  <tr>
+    <td>Keigh Rim</td>
+    <td>Tue 3-4, Thu 1-2</td>
+    <td>Volen 111</td>
+    <td>krim (at) brandeis (dot) edu</td>
+  </tr>
+  <tr>
+    <td>Jiarui Yao</td>
+    <td>Mon, Wed 10-11</td>
+    <td>Volen 11e0</td>
+    <td>jryao (at) brandeis (dot) edu</td>
+  </tr>
+</table>
+
+<br/>
+
+<a name="schedule"></a>
+<h3>Tentative schedule</h3>
+
+<table cellpadding=5 cellspacing=0 border="1">
+
+<tr>
+  <td>date</td>
+  <td>topic</td>
+  <td>readings</td>
+  <td>assignments</td>
+</tr>
+
+<tr>
+  <td>Sep 1</td>
+  <td>Introduction</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr>
+  <td>Sep 5</td>
+  <td>Getting started with Python and NLTK </td>
+  <td></td>
+  <td>assignment 0 - install nltk</td>
+</tr>
+
+<tr>
+  <td>Sep 8</td>
+  <td>Getting started with Python and NLTK</td>
+  <td>chapter 1</td>
+  <td>assignment 1 - exercises</td>
+</tr>
+
+<tr>
+  <td>Sep 12</td>
+  <td>More Python</td>
+  <td></td>
+  <td>assignment 2 - file analysis and mutual information</td>
+</tr>
+
+<tr>
+  <td>Sep 15</td>
+  <td>More Python</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr>
+  <td>Sep 19</td>
+  <td>Python review for assignments</td>
+  <td></td>
+  <td>assignment 2 part 1 due on Wednesday</td>
+</tr>
+
+<tr>
+  <td>Sep 22</td>
+  <td>Rosh Hashana, no class</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr>
+  <td>Sep 26</td>
+  <td>Corpus reader</td>
+  <td>chapter 2</td>
+  <td></td>
+</tr>
+
+<tr>
+  <td>Sep 29</td>
+  <td>Unix</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr>
+  <td>Oct 3</td>
+  <td>Brandeis Thursday, no class</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr>
+  <td>Oct 6</td>
+  <td>Source code control (Git and Github)</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr>
+  <td>Oct 10</td>
+  <td>Lexical resources (Wordnet)</td>
+  <td></td>
+  <td>   assignment 3 - corpus reader</td>
+</tr>
+
+<tr>
+  <td>Oct 13</td>
+  <td>Tokenization and regular expressions</td>
+  <td>chapter 3</td>
+  <td></td>
+</tr>
+
+<tr>
+  <td>Oct 17</td>
+  <td>Quiz 1</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr>
+  <td>Oct 20</td>
+  <td>Unicode</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr>
+  <td>Oct 24</td>
+  <td>Sofware design (waterfall, testing, pep8)</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr>
+  <td>Oct 27</td>
+  <td>Language models</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr>
+  <td>Oct 31</td>
+  <td>Part-of-speech tagging</td>
+  <td>chapter 5</td>
+  <td></td>
+</tr>
+
+<tr>
+  <td>Nov 3</td>
+  <td>Vector space model</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr>
+  <td>Nov 7</td>
+  <td>Finite State Transducers</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr>
+  <td>Nov 10</td>
+  <td>Twitter text mining</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr>
+  <td>Nov 14</td>
+  <td>Working with trees</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr>
+  <td>Nov 17</td>
+  <td>Working with trees</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr>
+  <td>Nov 21</td>
+  <td>Dynamic programming (edit distance, chart parsing)</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr>
+  <td>Nov 24</td>
+  <td>Thanksgiving, no class</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr>
+  <td>Nov 28</td>
+  <td>Propabilistic Context Free Parsing</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr>
+  <td>Dec 1</td>
+  <td>Quiz 2</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr>
+  <td>Dec 4</td>
+  <td>Dependency grammars</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr>
+  <td>Dec 8</td>
+  <td>TBD</td>
+  <td></td>
+  <td></td>
+</tr>
+
+</table>
+
+
+<!--<table border="1">
+<tr><td>Week</td><td>Content</td><td>Reading</td></tr>
+
+<tr><td>1-2</td><td>Intro to NLP, Python preliminaries</td><td>NLTK review</td></tr>
+<tr><td>3-4</td><td>Language processing and Python</td><td>Ch 1</td></tr>
+<tr><td>5-6</td><td>Accessing text corpora and lexical resources</td><td>Ch 2</td></tr>
+<tr><td>7-8</td><td>Processing raw text</td><td>Ch 3</td></tr>
+<tr><td>9-10</td><td>Categorizing and tagging words</td><td>Ch 5</td></tr>
+<tr><td>11-12</td><td>Extracting information from text</td><td>Ch 7</td></tr>
+<tr><td>13-14</td><td>Analyzing syntactic structure</td><td>Ch 8</td></tr>
+</table>
+-->
+
+<hr/>
+
+</body>
+</html>
